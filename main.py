@@ -77,7 +77,7 @@ with model_training:
 
     fasting_blood_sugar = select_col.selectbox("Is the patient's fasting blood sugar greater than 120 mg/dl?", options=["Yes", "No"])
     if fasting_blood_sugar == "Yes":
-        fasting_blood_sugar = 1
+        fasting_blood_sugar = 10
     else:
         fasting_blood_sugar = 0
 
@@ -93,7 +93,7 @@ with model_training:
 
     exercise_induced_angina = select_col.selectbox("Does the patient have exercise induced angina?", options=["Yes", "No"])
     if exercise_induced_angina == "Yes":
-        exercise_induced_angina = 1
+        exercise_induced_angina = 10
     else:
         exercise_induced_angina = 0
 
