@@ -32,17 +32,17 @@ with dataset:
 with features:
     st.title("These are my descriptives.")
 
-    st.subheader("Is age a good indicator of a cardiac event?")
+    st.subheader("The distribution of cardiac events by age.")
     age_distribution = pd.DataFrame(heart_attack_data['age'].value_counts())
     st.bar_chart(heart_attack_data, x="age", y="output")
     st.caption("This graph show the number of patients at each age who had a cardiac event.  Where the Y-Axis is the number of patients and the X-Axis is the age of those patients.")
 
-    st.subheader("Is cholesterol level a good indicator of a cardiac event?")
+    st.subheader("The distribution of cardiac events by cholesterol level.")
     cholesterol_distribution = pd.DataFrame(heart_attack_data['cholesterol'].value_counts())
     st.bar_chart(heart_attack_data, x = "cholesterol", y="output")
     st.caption("This graph is showing the number of patients with a specific cholesterol, who were at high risk of a cardiac event.  Where the output is the number of patients and chol is the cholesterol")
 
-    st.subheader("Is resting blood pressure a good indicator of a cardiac event?")
+    st.subheader("The distribution of cardiac events by resting blood pressure.")
     st.bar_chart(heart_attack_data, x = "bloodPressure", y="output")
     st.caption("This graph is showing the number of patients with a specific blood pressure, who were at high risk of a cardiac event.  Where the output is the number of patients and bloodPressure is Blood Pressure.")
 
